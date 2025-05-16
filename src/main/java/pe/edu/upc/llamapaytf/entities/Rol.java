@@ -10,11 +10,11 @@ public class Rol implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Rol_id;
-    @Column(nullable = false,length = 35)
+    @Column(nullable = false)
     private String TipoRol;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     public int getRol_id() {
