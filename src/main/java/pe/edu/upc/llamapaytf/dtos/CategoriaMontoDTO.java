@@ -2,6 +2,7 @@ package pe.edu.upc.llamapaytf.dtos;
 
 public class CategoriaMontoDTO {
     private String nameCategory;
+    private String nameMonto;
     private Double totalGasto;
 
     public String getNameCategory() {
