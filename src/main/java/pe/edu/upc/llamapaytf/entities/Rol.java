@@ -10,7 +10,7 @@ public class Rol implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Rol_id;
-    @Column(name = "TipoRol",nullable = false,length = 35)
+    @Column(nullable = false,length = 35)
     private String TipoRol;
 
     @ManyToOne
